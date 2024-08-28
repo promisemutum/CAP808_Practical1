@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Practical Evaluation 1</title>
+        <style>
+            .img-container {
+                display: flex;
+                justify-content: space-around;
+            }
+            .img-item {
+                text-align: center;
+                margin: 10px;
+            }
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                margin: 20px;
+                padding: 20px;
+            }
+            h1 {
+                color: #333;
+            }
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-bottom: 20px;
+            }
+            th, td {
+                border: 1px solid #ddd;
+                padding: 10px;
+                text-align: left;
+            }
+            th {
+                background-color: #f4f4f4;
+            }
+            ul {
+                list-style: none;
+                padding-left: 0;
+            }
+            ul li {
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>
+            Practical Evaluation 1
+        </h1>
+
+        <h2>
+            Q1. Show the use of different attributes of image Tag?	
+        </h2>
+        
+        <div class="img-container">
+            <div class="img-item">
+                <img src="images/img1.jpg" alt="img1" title="Image 1" height="300px" width="auto" style="box-shadow: 5px 2px 2px black;" id="img1">
+                <p>Title: Image 1<br>Height: 300px<br>Width: auto<br>Style: box-shadow: 5px 2px 2px black</p>
+            </div>
+            <div class="img-item">
+                <img src="images/img1.jpg" alt="img2" title="Image 2" height="260px" width="150px" loading="lazy">
+                <p>Title: Image 2<br>Height: 300px<br>Width: auto<br>Loading: lazy</p>
+            </div>
+            <div class="img-item">
+                <img src="images/img1.jpg" alt="img3" title="Image 3" height="350px" width="auto"  style="border: 2px solid black;" >
+                <p>Title: Image 3<br>Height: 300px<br>Width: auto<br>Style: border: 2px solid black</p>
+            </div>
+        </div>
+
+        <p>Attributes in 'img' tag in HTML, are additional properties that you can set to control how the image behaves and is displayed 
+            on a webpage. These attributes provide specific instructions to the browser, such as where to find the image file (src), what 
+            text to display if the image fails to load (alt), the dimensions of the image (width, height), and other aspects like how the 
+            image should be loaded (loading)</p>
+
+        <h2>
+            Q2. Compare HTML with HTML5. 
+        </h2>
+
+        <p><strong>HTML</strong> and <strong>HTML5</strong> are both versions of the HyperText Markup Language, which is used to structure 
+            and present content on the web.
+            <strong>HTML5</strong> is the latest version, introducing new features like native audio/video support, semantic elements, and 
+            offline storage. HTML5 is the latest version of HTML and comes with several improvements and new features. </p>
+        <h3>Key Differences:</h3>
+        <table>
+            <tr>
+                <th>HTML</th>
+                <th>HTML5</th>
+            </tr>
+            <tr>
+                <td>Not mobile-friendly.</td>
+                <td>Optimized for mobile devices.</td>
+            </tr>
+            <tr>
+                <td>No native audio/video support.</td>
+                <td>Supports audio and video tags.</td>
+            </tr>
+            <tr>
+                <td>Uses cookies for storage.</td>
+                <td>Uses localStorage and application cache.</td>
+            </tr>
+            <tr>
+                <td>JavaScript runs only in the browser.</td>
+                <td>Supports JS Web Workers.</td>
+            </tr>
+            <tr>
+                <td>Uses external technologies for vector graphics.</td>
+                <td>Supports SVG and Canvas.</td>
+            </tr>
+            <tr>
+                <td>No drag-and-drop functionality.</td>
+                <td>Supports drag-and-drop.</td>
+            </tr>
+            <tr>
+                <td>Complex doctype and character encoding.</td>
+                <td>Simple doctype and encoding.</td>
+            </tr>
+            <tr>
+                <td>Requires third-party libraries or plugins to create graphics.</td>
+                <td>Includes the canvas element for drawing graphics on the fly and supports<br> Scalable Vector Graphics (SVG) directly in the markup.</td>
+            </tr>
+        </table>            
+        </p>
+
+        <h2>
+            Q3. Write HTML Code to demonstrate the use of Anchor Tag for the Following. 	
+        </h2>
+
+        <h3>
+            1. Creating a web link that opens in a new window. 	
+        </h3>
+
+        <a href="https://www.samsung.com" target="_blank">Samsung Website</a>
+
+        <h3>
+            2. Creating a web link that opens in the same window. 
+        </h3>
+
+        <a href="https://www.apple.com">Apple Website</a>
+
+        <h3>
+            3. Reference within the same html documented. Refer to some image. 	
+        </h3>
+
+        <a href="#img1">Go to Image</a>
+
+        <h3>
+            4. Making an image a hyperlink to display second image.
+        </h3>
+
+        <a href="images/img2.jpg"> <img src="images/img3.jpg" alt="img3" height="300px" width="auto"> </a>
+
+    </body>
+</html>
